@@ -1,0 +1,7 @@
+common-creds/
+
+**/.terraform/*
+**/*.tfstate
+**/*.tfstate.backup
+
+*.zip
