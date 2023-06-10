@@ -1,7 +1,7 @@
 # Resource: EC2
 resource "aws_instance" "ec2demo" {
   ami           = var.ec2_ami_id
-  instance_type = "t2.micro"
+  instance_type = var.ec2_instance_type
   key_name      = "terraform-key"
   count         = var.ec2_instance_count
   user_data     = <<-EOF
